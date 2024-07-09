@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AIMailBuilder/static/css/main.0f9d25d5.css",
+    "main.js": "/AIMailBuilder/static/js/main.e726d8c1.js",
+    "static/js/453.8ab44547.chunk.js": "/AIMailBuilder/static/js/453.8ab44547.chunk.js",
+    "static/media/logo.svg": "/AIMailBuilder/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/AIMailBuilder/index.html",
+    "main.0f9d25d5.css.map": "/AIMailBuilder/static/css/main.0f9d25d5.css.map",
+    "main.e726d8c1.js.map": "/AIMailBuilder/static/js/main.e726d8c1.js.map",
+    "453.8ab44547.chunk.js.map": "/AIMailBuilder/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f9d25d5.css",
+    "static/js/main.e726d8c1.js"
+  ]
+}
