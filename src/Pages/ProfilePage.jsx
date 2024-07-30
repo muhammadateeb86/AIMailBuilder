@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import "../Css/profile.css";
-import stayaLogo from "../Media/stayaLogo.jpeg";
+import stayaLogo from "../Media/stayaLogo.png";
 import sample from "../Media/sample.png";
-import dummy from "../Media/dummy.jfif";
+import dummy from "../Media/dummy.png";
 import { useNavigate } from 'react-router-dom';
 
 const ProfilePage = () => {
