@@ -123,10 +123,9 @@ textarea {
     border-radius: 5px;
 }
 
-.profile_page-tips, .profile_page-testimonials, .profile_page-gallery {
+.profile_page-tips, .profile_page-testimonials {
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
