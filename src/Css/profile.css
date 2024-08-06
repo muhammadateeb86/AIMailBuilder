@@ -276,5 +276,5 @@ h1 {
 }
 
 .prompt-section.slide-right {
-    transform: translateX(100%); 
+    margin-left: 2rem;
 }
