@@ -42,7 +42,7 @@ const ProfilePage = ({ setTemplateForEditor }) => {
         setLoading(true);
         const prompt = promptRef.current.value;
         try {
-            const response = await fetch("https://ideal-wildly-cat.ngrok-free.app/query", {
+            const response = await fetch(`${process.env.REACT_APP_FLASK_URL}/query`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
