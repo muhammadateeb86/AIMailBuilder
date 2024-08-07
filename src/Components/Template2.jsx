@@ -1,114 +1,110 @@
-import React,{useState} from 'react'
-
-const styles = {
-    banner2EmailContainer: {
-      height: 'fit-content',
-      maxWidth: '400px',
-      margin: '40px auto',
-      backgroundColor: 'white',
-      borderRadius: '8px',
-      boxShadow: '0 0 15px rgba(0, 0, 0, 0.1)',
-      position: 'relative',
-      // overflow: 'hidden', // Uncomment if needed
-    },
-    banner2Hero: {
-      position: 'relative',
-    },
-    banner2HeroImage: {
-      width: '100%',
-      height: '400px',
-      objectFit: 'cover',
-      borderRadius: '8px 8px 0 0',
-    },
-    banner2HeroOverlay: {
-      position: 'absolute',
-      top: '0',
-      left: '0',
-      width: '100%',
-      height: '100%',
-      // backgroundColor: 'rgba(0, 0, 0, 0.5)', // Uncomment if needed
-      borderRadius: '8px 8px 0 0',
-    },
-    banner2HeroContent: {
-      position: 'absolute',
-      bottom: '60%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      textAlign: 'center',
-      color: '#ffffff',
-    },
-    banner2HeroContentH1: {
-      fontSize: '36px',
-      marginBottom: '-90%',
-      backgroundColor: 'rgba(0, 0, 0, 0.532)',
-    },
-    banner2HeroContentP: {
-      fontSize: '18px',
-      marginBottom: '20px',
-    },
-    banner2Main: {
-      padding: '30px',
-    },
-    banner2MainH2: {
-      color: '#007bff',
-      fontSize: '24px',
-      marginBottom: '10px',
-    },
-    banner2MainP: {
-      color: '#555555',
-      fontSize: '16px',
-      lineHeight: '1.5',
-      marginBottom: '20px',
-    },
-    banner2Button: {
-      display: 'block',
-      padding: '12px 24px',
-      margin: '0 auto',
-      backgroundColor: '#007bff',
-      color: '#ffffff',
-      textAlign: 'center',
-      textDecoration: 'none',
-      borderRadius: '5px',
-      fontSize: '16px',
-      fontWeight: '600',
-    },
-    banner2Footer: {
-      backgroundColor: '#f8f9fa',
-      color: '#6c757d',
-      padding: '20px',
-      textAlign: 'center',
-    },
-    banner2FooterA: {
-      color: '#007bff',
-      textDecoration: 'none',
-      margin: '0 10px',
-    },
-  };
-
-const Template2 = ({result}) => {
-
-    const [url, setUrl] = useState(null);
-
-    return (
-        <div style={styles.banner2EmailContainer}>
-            <div style={styles.banner2Hero}>
-                <img style={styles.banner2HeroImage} src={result.image_url} alt="Generated" />
-                <div style={styles.banner2HeroOverlay}>
-                    <div style={styles.banner2HeroContent}>
-                        <h1>{result.subject}</h1>
-                    </div>
-                </div>
-            </div>
-            <div style={styles.banner2Main}>
-                <h2>{result.promo}</h2>
-                <p>{result.description}</p>
-                <a href={result.url} style={styles.banner2Button}>Shop Now</a>
-            </div>
-            <div style={styles.banner2Footer}>
-                <a style={styles.banner2FooterA} href="#">Unsubscribe</a>
-            </div>
-        </div>
-    )
+* {
+    box-sizing: border-box; /* this includes border and margins to size */
 }
 
-export default Template2;
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+} 
+.logo {
+    width: 80px; /* adjust size as needed */
+    position: absolute; /* Position logo in the top left corner */
+    z-index: 10; /* Ensure it is on top of other elements */
+}
+.banner2-email-container {
+    height: fit-content;
+    width: 400px; /* Adjusted to match template1 */
+    margin: 0 auto; /* Adjusted to match template1 */
+    background-color: white;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.banner2-hero {
+    position: relative;
+}
+
+.banner2-hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.banner2-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-radius: 8px 8px 0 0;
+}
+
+.banner2-hero-content {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+.banner2-hero-content h1 {
+    font-size: 36px;
+    margin-bottom: -90%;
+    background-color: rgba(0, 0, 0, 0.532);
+}
+
+.banner2-hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner2-main {
+    padding: 30px;
+}
+
+.banner2-main h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.banner2-main p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.banner2-button {
+    display: block;
+    padding: 12px 24px;
+    margin: 0 auto;
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.banner2-footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner2-footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
